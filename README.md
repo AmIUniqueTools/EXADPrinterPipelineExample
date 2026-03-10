@@ -112,7 +112,7 @@ For more information, check the documentation: [https://www.browserstack.com/doc
 ### 2. Upload the application to BrowserStack
 Before running the automation, you must upload the [EXADPrinter demo application](./DataCollectionSetup/exadprinterDemoApp.apk).
 
-- Upload the APK using the BrowserStack API as described here: [https://www.browserstack.com/docs/app-automate/appium/upload-app-using-api](https://www.browserstack.com/docs/app-automate/appium/upload-app-using-api)
+- Upload the APK using the BrowserStack API as described here: [https://www.browserstack.com/docs/app-automate/appium/set-up-test-env/upload-and-manage-apps](https://www.browserstack.com/docs/app-automate/appium/set-up-test-env/upload-and-manage-apps?fw-lang=python%2Fpytest)
 - After uploading the application, BrowserStack will return an app URL similar to:
 ```
 bs://<app-id>
