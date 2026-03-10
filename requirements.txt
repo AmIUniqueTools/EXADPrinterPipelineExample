@@ -1,0 +1,16 @@
+jsonmerge
+multiprocess
+paver
+selenium
+psutil
+pytest
+pytest-variables
+pytest-selenium
+Appium-Python-Client
+browserstack-sdk
+scikit-learn
+seaborn
+pandas
+numpy
+matplotlib
+jc

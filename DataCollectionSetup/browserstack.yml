@@ -1,0 +1,15 @@
+userName: 
+accessKey: 
+projectName: BrowserStack EXADPrinter Test
+buildName: bstack-fingerprint-test
+buildIdentifier: "OnePlus_13R-15.0-"
+framework: pytest
+app: 
+browserstackLocal: false
+deviceLogs: false
+appiumLogs: false 
+platforms:
+  - platformName: android
+    deviceName: "OnePlus 13R"
+    platformVersion: "15.0"
+    appium:optionalIntentArguments: '--es API_END_POINT "API_END_POINT"'

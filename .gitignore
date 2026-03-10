@@ -1,0 +1,6 @@
+.venv
+.vscode
+DataCollectionSetup/__pycache__
+DataCollectionSetup/.pytest_cache
+DataCollectionSetup/log
+fingerprint_parser/__pycache__
