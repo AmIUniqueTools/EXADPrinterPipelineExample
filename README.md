@@ -138,7 +138,7 @@ BROWSERSTACK_ACCESS_KEY=
 
 Where:
 
-* `API_BASE_RL` is the server receiving fingerprints, if no API_END_POINT is provided fingerprints will be sent to our servers.
+* `API_BASE_URL` is the server receiving fingerprints, if no API_BASE_URL is provided fingerprints will be sent to our servers.
 * `APP_URL` is the URL of the `exadprinterDemoApp.apk`
 * `BROWSERSTACK_USERNAME` and `BROWSERSTACK_ACCESS_KEY` are your BrowserStack credentials
 
