@@ -118,7 +118,7 @@ Before running the automation, you must upload the [EXADPrinter demo application
 bs://<app-id>
 ```
 - This value should be used fo `APP_URL` later.
-- 
+
 ### 3. Configure the pipeline
 
 Edit:
