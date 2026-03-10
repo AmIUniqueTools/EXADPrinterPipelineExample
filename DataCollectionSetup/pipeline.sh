@@ -2,7 +2,7 @@
 
 # Define device brand patterns for each Android version
 CAPABILITIES_FILE="capabilities.json"
-API_END_POINT="API_END_POINT"
+API_BASE_URL="API_BASE_URL"
 
 # Requirements: jq must be installed
 command -v jq >/dev/null 2>&1 || { echo "jq is required. Install it first."; exit 1; }
@@ -44,7 +44,7 @@ platforms:
   - platformName: $platformName
     deviceName: "$deviceName"
     platformVersion: "$platformVersion"
-    appium:optionalIntentArguments: '--es API_END_POINT "$API_END_POINT"'
+    appium:optionalIntentArguments: '--es API_END_POINT "$API_BASE_URL"'
 EOL
 
   echo "🚀 Running test on $deviceName (Android $platformVersion)"
