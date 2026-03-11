@@ -150,7 +150,17 @@ The script will:
 1. create BrowserStack sessions
 2. install the EXADPrinter demo application
 3. run fingerprint collection
-4. send fingerprints to the configured API endpoint (check [FingerprintApi.kt](https://github.com/AmIUniqueTools/AmIUniqueApp/blob/main/app/src/main/java/com/amiunique/amiuniqueapp/network/FingerprintApi.kt) for the expected endpoint schema schema )
+4. send fingerprints to your server. To do so, your must implement `<YOUR_SERVER_URL>/saveStructure/` API endpoint and expect a **POST request** containing
+* a **fingerprint file** (sent as `file`)
+* a **device identifier** (sent as `uuid`)
+The endpoint response should follow the schema below:
+```json
+  UploadResponse {
+    message: String
+    downloadUrl: String
+    fileName: String
+  }
+```
 
 The list of devices used during the experiment is defined in [`capabilities.json`](DataCollectionSetup/capabilities.json). The file currently contains 10 device configurations. Additional devices can be added by following the BrowserStack capabilities documentation: [https://www.browserstack.com/docs/app-automate/capabilities](https://www.browserstack.com/docs/app-automate/capabilities)
 
