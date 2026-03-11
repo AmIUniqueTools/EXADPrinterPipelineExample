@@ -6,70 +6,9 @@
   },
   {
     "platformName": "android",
-    "deviceName": "Samsung Galaxy S23 Ultra",
-    "platformVersion": "13.0"
-  },
-  {
-    "platformName": "android",
-    "deviceName": "Samsung Galaxy S23",
-    "platformVersion": "13.0"
-  },
-  {
-    "platformName": "android",
-    "deviceName": "Samsung Galaxy S22 Ultra",
-    "platformVersion": "12.0"
-  },
-  {
-    "platformName": "android",
-    "deviceName": "Samsung Galaxy S22 Plus",
-    "platformVersion": "12.0"
-  },
-  {
-    "platformName": "android",
-    "deviceName": "Samsung Galaxy S22",
-    "platformVersion": "12.0"
-  },
-  {
-    "platformName": "android",
-    "deviceName": "Samsung Galaxy S21",
-    "platformVersion": "11.0"
-  },
-  {
-    "platformName": "android",
-    "deviceName": "Samsung Galaxy S21 Ultra",
-    "platformVersion": "11.0"
-  },
-  {
-    "platformName": "android",
-    "deviceName": "Samsung Galaxy S20",
-    "platformVersion": "10.0"
-  },
-  {
-    "platformName": "android",
-    "deviceName": "Samsung Galaxy S20 Ultra",
-    "platformVersion": "10.0"
-  },
-  {
-    "platformName": "android",
-    "deviceName": "Samsung Galaxy S24",
-    "platformVersion": "16.0"
-  },
-  {
-    "platformName": "android",
-    "deviceName": "Samsung Galaxy S25",
-    "platformVersion": "15.0"
-  },
-  {
-    "platformName": "android",
     "deviceName": "Samsung Galaxy M52",
     "platformVersion": "11.0"
   },
-  {
-    "platformName": "android",
-    "deviceName": "Samsung Galaxy Note 9",
-    "platformVersion": "9.0"
-  },
-
   {
     "platformName": "android",
     "deviceName": "Google Pixel 9",
@@ -77,30 +16,9 @@
   },
   {
     "platformName": "android",
-    "deviceName": "Google Pixel 10 Pro XL",
-    "platformVersion": "16.0"
-  },
-  {
-    "platformName": "android",
-    "deviceName": "Google Pixel 10 Pro",
-    "platformVersion": "16.0"
-  },
-  {
-    "platformName": "android",
-    "deviceName": "Google Pixel 10",
-    "platformVersion": "16.0"
-  },
-  {
-    "platformName": "android",
-    "deviceName": "Google Pixel 9 Pro XL",
-    "platformVersion": "15.0"
-  },
-  {
-    "platformName": "android",
     "deviceName": "Google Pixel 9 Pro",
     "platformVersion": "15.0"
   },
-
   {
     "platformName": "android",
     "deviceName": "OnePlus 13R",
@@ -108,26 +26,9 @@
   },
   {
     "platformName": "android",
-    "deviceName": "OnePlus 12R",
-    "platformVersion": "14.0"
-  },
-  {
-    "platformName": "android",
-    "deviceName": "OnePlus 9",
-    "platformVersion": "13.0"
-  },
-
-  {
-    "platformName": "android",
     "deviceName": "Xiaomi Redmi Note 11",
     "platformVersion": "11.0"
   },
-  {
-    "platformName": "android",
-    "deviceName": "Xiaomi Redmi Note 9",
-    "platformVersion": "10.0"
-  },
-
   {
     "platformName": "android",
     "deviceName": "Motorola Moto G71 5G",
@@ -135,16 +36,9 @@
   },
   {
     "platformName": "android",
-    "deviceName": "Motorola Moto G9 Play",
-    "platformVersion": "10.0"
-  },
-
-  {
-    "platformName": "android",
     "deviceName": "Huawei Nova 11 SE",
     "platformVersion": "12.0"
   },
-
   {
     "platformName": "android",
     "deviceName": "Vivo Y21",
@@ -152,18 +46,7 @@
   },
   {
     "platformName": "android",
-    "deviceName": "Vivo V21",
-    "platformVersion": "11.0"
-  },
-
-  {
-    "platformName": "android",
     "deviceName": "Oppo Reno 6",
     "platformVersion": "11.0"
-  },
-  {
-    "platformName": "android",
-    "deviceName": "Oppo Reno 3 Pro",
-    "platformVersion": "10.0"
   }
 ]
