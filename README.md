@@ -20,7 +20,13 @@ To preserve user privacy, the repository **does not contain the original dataset
 If you use this artifact in your research, please cite:
 
 ```
-
+@article{bouhenniche2026exadprinter,
+  author  = {Bouhenniche Sihem, Laperdrix Pierre, Rudametkin Walter },
+  title   = {EXADPrinter: Semi-Exhaustive Permissionless Device Fingerprinting Within the Android Ecosystem},
+  journal = {Proceedings on Privacy Enhancing Technologies},
+  year    = {2026},
+  note    = {To appear (PETS 2026)}
+}
 ```
 
 ---
@@ -29,7 +35,7 @@ If you use this artifact in your research, please cite:
 
 ```
 .
-├── DUMMY_DATA/                   # Example raw fingerprints
+├── DUMMY_DATA/                   # Browserstack devices fingerprints
 ├── DUMMY_DATA_PREPARED/          # Cleaned example fingerprints
 ├── DUMMY_DATA_STRUCTURE/         # Extracted fingerprint structure
 ├── fingerprint_parser/           # Python module for parsing attributes
@@ -60,13 +66,11 @@ pip install -r requirements.txt
 
 # Using the Dummy Dataset
 
-The repository provides a **small dummy dataset** collected from a limited number of Android devices.
-
-The dataset is intended to:
+The repository provides a **dummy dataset collected on real Android devices available through the [BrowserStack](https://www.browserstack.com/) platform**.
+The dummy dataset contains **22** fingerprints collected from **11** devices, and is intended to:
 
 * demonstrate the expected fingerprint format
 * allow testing of the parsing and cleaning pipeline
-* reproduce the workflow described in the paper
 
 Run the cleaning notebook:
 
@@ -98,7 +102,7 @@ This example uses **BrowserStack real Android devices**. Official documentation 
 
 ### 1. Create a BrowserStack account
 
-- Create an account on: https://www.browserstack.com/
+- Create BrowserStack account at [https://www.browserstack.com/](https://www.browserstack.com/) (a free trial provides **100 minutes of Automate testing**).
 - You will need your BrowserStack credentials to run the automation pipeline.
 - You can retrieve them from your account dashboard: [https://www.browserstack.com/accounts/settings](https://www.browserstack.com/accounts/settings)
 - These values correspond to:
@@ -120,14 +124,7 @@ bs://<app-id>
 - This value should be used fo `APP_URL` later.
 
 ### 3. Configure the pipeline
-
-Edit:
-
-```
-DataCollectionSetup/pipeline.sh
-```
-
-Provide the following variables:
+- Install [`jq`](https://jqlang.org/download/) then edit [`DataCollectionSetup/pipeline.sh`](DataCollectionSetup/pipeline.sh) by providing the following variables:
 
 ```
 API_BASE_RL=
@@ -155,7 +152,7 @@ The script will:
 3. run fingerprint collection
 4. send fingerprints to the configured API endpoint (check [FingerprintApi.kt](https://github.com/AmIUniqueTools/AmIUniqueApp/blob/main/app/src/main/java/com/amiunique/amiuniqueapp/network/FingerprintApi.kt) for the expected endpoint schema schema )
 
-The list of devices used during the experiment is defined in [`capabilities.json`](DataCollectionSetup/capabilities.json)
+The list of devices used during the experiment is defined in [`capabilities.json`](DataCollectionSetup/capabilities.json). The file currently contains 10 device configurations. Additional devices can be added by following the BrowserStack capabilities documentation: [https://www.browserstack.com/docs/app-automate/capabilities](https://www.browserstack.com/docs/app-automate/capabilities)
 
 ---
 
