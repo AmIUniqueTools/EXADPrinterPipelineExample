@@ -162,7 +162,7 @@ The endpoint response should follow the schema below:
   }
 ```
 
-The list of devices used during the experiment is defined in [`capabilities.json`](DataCollectionSetup/capabilities.json). The file currently contains 10 device configurations. Additional devices can be added by following the BrowserStack capabilities documentation: [https://www.browserstack.com/docs/app-automate/capabilities](https://www.browserstack.com/docs/app-automate/capabilities)
+The list of devices used during the experiment is defined in [`capabilities.json`](DataCollectionSetup/capabilities.json). The file currently contains 3 device configurations. Additional devices can be added by following the BrowserStack capabilities documentation: [https://www.browserstack.com/docs/app-automate/capabilities](https://www.browserstack.com/docs/app-automate/capabilities)
 
 ---
 
