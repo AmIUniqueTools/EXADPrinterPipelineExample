@@ -13,7 +13,7 @@ class TestAPP:
 
             for _ in range(int(steps)):
                 time.sleep(interval)
-                driver.current_package   # lightweight command
+                driver.get_window_size()   # lightweight command
         # First run
         wait_foreground(self.driver, 180)
 

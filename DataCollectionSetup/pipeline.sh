@@ -2,6 +2,7 @@
 
 # Define device brand patterns for each Android version
 CAPABILITIES_FILE="capabilities.json"
+# Optional: Define your API_BASE_URL 
 API_BASE_URL="API_BASE_URL"
 
 # Requirements: jq must be installed
@@ -29,6 +30,9 @@ jq -c '.[]' "$CAPABILITIES_FILE" | while read -r cap; do
   buildIdentifier="$(echo "$deviceName-$platformVersion-$i" | tr ' /' '__')"
 
   # Generate browserstack.yml (ONE DEVICE)
+  # If you don't define your API_BASE_URL, you should delete this line
+  # appium:optionalIntentArguments: '--es API_END_POINT "$API_BASE_URL"'
+  # This ensures that the application falls back to the default server configuration
   cat > browserstack.yml <<EOL
 userName: $BROWSERSTACK_USERNAME
 accessKey: $BROWSERSTACK_ACCESS_KEY
